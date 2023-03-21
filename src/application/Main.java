@@ -17,13 +17,12 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		// TODO Auto-generated method stub
+		
+		System.out.println("Game Launch");
 		Color backgroundColor = Color.web("#555555");
 		
 		Group root = new Group();
 		Scene scene = new Scene(root, 1280, 720, backgroundColor);
-		
-		
-	
 		
 		primaryStage.setX(20);
 		primaryStage.setY(200);
@@ -31,8 +30,7 @@ public class Main extends Application {
 		
 		generateBoard(root);
 		
-		
-		
+	
 		
 		primaryStage.setTitle("Chess -- Fx");
 		primaryStage.setScene(scene);
@@ -41,6 +39,7 @@ public class Main extends Application {
 	}
 	
 	public void generateBoard(Group root) {
+		System.out.println("Board Generated");
 		
 		int controlSize = 70;
 		
